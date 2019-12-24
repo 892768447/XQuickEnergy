@@ -1,545 +1,544 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	android:orientation="vertical"
-	android:padding="12dp">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-		<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="BASE CONFIGURATION"
-			android:background="#FF898989"
-			android:textColor="#FFFFFFFF"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF898989"
+            android:text="@string/base_configuration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Immediate effect"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_immediateEffect"/>
+        <CheckBox
+            android:id="@+id/cb_immediateEffect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/immediate_effect" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Record log"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_recordLog"/>
+        <CheckBox
+            android:id="@+id/cb_recordLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/record_log" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Show toast"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_showToast"/>
+        <CheckBox
+            android:id="@+id/cb_showToast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/show_toast" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Stay awake"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_stayAwake"/>
+        <CheckBox
+            android:id="@+id/cb_stayAwake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/stay_awake" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Auto restart service"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_autoRestart"/>
+        <CheckBox
+            android:id="@+id/cb_autoRestart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/auto_restart_service" />
 
-	</LinearLayout>
+    </LinearLayout>
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-		<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="FOREST CONFIGURATION"
-			android:background="#FF898989"
-			android:textColor="#FFFFFFFF"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF898989"
+            android:text="@string/forest_configuration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Collect energy"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_collectEnergy"/>
+        <CheckBox
+            android:id="@+id/cb_collectEnergy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/collect_energy" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Check interval (minutes)"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_checkInterval"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_checkInterval"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/check_interval_minutes"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Thread count"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_threadCount"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_threadCount"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/thread_count"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Advance time (milliseconds)"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_advanceTime"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_advanceTime"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/advance_time_milliseconds"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Collect interval (milliseconds)"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_collectInterval"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_collectInterval"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/collect_interval_milliseconds"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Collect timeout (seconds)"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_collectTimeout"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_collectTimeout"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/collect_timeout_seconds"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Return water 30"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_returnWater30"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_returnWater30"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/return_water_30"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Return water 20"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_returnWater20"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_returnWater20"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/return_water_20"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Return water 10"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_returnWater10"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_returnWater10"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/return_water_10"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Help friend collect"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_helpFriendCollect"/>
+        <CheckBox
+            android:id="@+id/cb_helpFriendCollect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/help_friend_collect" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Don't collect list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_dontCollectList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_dontCollectList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/don_t_collect_list"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Don't help collect list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_dontHelpCollectList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_dontHelpCollectList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/don_t_help_collect_list"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Receive forest task award"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_receiveForestTaskAward"/>
+        <CheckBox
+            android:id="@+id/cb_receiveForestTaskAward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/receive_forest_task_award" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Water friend list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_waterFriendList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_waterFriendList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/water_friend_list"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Cooperate water"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_cooperateWater"/>
+        <CheckBox
+            android:id="@+id/cb_cooperateWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/cooperate_water" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Cooperate water list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_cooperateWaterList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_cooperateWaterList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/cooperate_water_list"
+            android:textAllCaps="false" />
 
-	</LinearLayout>
+    </LinearLayout>
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-		<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="FARM CONFIGURATION"
-			android:background="#FF898989"
-			android:textColor="#FFFFFFFF"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF898989"
+            android:text="@string/farm_configuration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Enable farm"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_enableFarm"/>
+        <CheckBox
+            android:id="@+id/cb_enableFarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/enable_farm" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Reward friend"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_rewardFriend"/>
+        <CheckBox
+            android:id="@+id/cb_rewardFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/reward_friend" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Send back animal"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_sendBackAnimal"/>
+        <CheckBox
+            android:id="@+id/cb_sendBackAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/send_back_animal" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Send type"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_sendType"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_sendType"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/send_type"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Don't send firend list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_dontSendFriendList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_dontSendFriendList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/don_t_send_firend_list"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Recall animal type"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_recallAnimalType"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_recallAnimalType"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/recall_animal_type"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Receive farm tool reward"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_receiveFarmToolReward"/>
+        <CheckBox
+            android:id="@+id/cb_receiveFarmToolReward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/receive_farm_tool_reward" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Use new egg tool"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_useNewEggTool"/>
+        <CheckBox
+            android:id="@+id/cb_useNewEggTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/use_new_egg_tool" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Harvest produce"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_harvestProduce"/>
+        <CheckBox
+            android:id="@+id/cb_harvestProduce"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/harvest_produce" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Donation"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_donation"/>
+        <CheckBox
+            android:id="@+id/cb_donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/donation" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Answer question"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_answerQuestion"/>
+        <CheckBox
+            android:id="@+id/cb_answerQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/answer_question" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Receive farm task award"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_receiveFarmTaskAward"/>
+        <CheckBox
+            android:id="@+id/cb_receiveFarmTaskAward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/receive_farm_task_award" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Feed animal"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_feedAnimal"/>
+        <CheckBox
+            android:id="@+id/cb_feedAnimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/feed_animal" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Use accelerate tool"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_useAccelerateTool"/>
+        <CheckBox
+            android:id="@+id/cb_useAccelerateTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/use_accelerate_tool" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Feed friend animal list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_feedFriendAnimalList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_feedFriendAnimalList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/feed_friend_animal_list"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Notify friend"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_notifyFriend"/>
+        <CheckBox
+            android:id="@+id/cb_notifyFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/notify_friend" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Don't notify friend list"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_dontNotifyFriendList"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_dontNotifyFriendList"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/don_t_notify_friend_list"
+            android:textAllCaps="false" />
 
-	</LinearLayout>
+    </LinearLayout>
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-		<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="OTHER CONFIGURATION"
-			android:background="#FF898989"
-			android:textColor="#FFFFFFFF"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF898989"
+            android:text="@string/other_configuration"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Receive point"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_receivePoint"/>
+        <CheckBox
+            android:id="@+id/cb_receivePoint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/receive_point" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Open treasure box"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_openTreasureBox"/>
+        <CheckBox
+            android:id="@+id/cb_openTreasureBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/open_treasure_box" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Donate charity coin"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_donateCharityCoin"/>
+        <CheckBox
+            android:id="@+id/cb_donateCharityCoin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/donate_charity_coin" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Min exchange count"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_minExchangeCount"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_minExchangeCount"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/min_exchange_count"
+            android:textAllCaps="false" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Latest exchange time (24-hour system)"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_latestExchangeTime"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_latestExchangeTime"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/latest_exchange_time_24_hour_system"
+            android:textAllCaps="false" />
 
-		<CheckBox
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="Koubei sign in"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:id="@+id/cb_kbSignIn"/>
+        <CheckBox
+            android:id="@+id/cb_kbSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:text="@string/koubei_sign_in" />
 
-	</LinearLayout>
+    </LinearLayout>
 
-	<LinearLayout
-		android:orientation="vertical"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-		<TextView
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:text="MORE"
-			android:background="#FF898989"
-			android:textColor="#FFFFFFFF"
-			android:textAppearance="?android:attr/textAppearanceMedium"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF898989"
+            android:text="@string/more"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#FFFFFFFF" />
 
-		<Button
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			style="?android:attr/buttonBarButtonStyle"
-			android:text="Support developer"
-			android:textAllCaps="false"
-			android:onClick="onClick"
-			android:minHeight="50dp"
-			android:gravity="left|center_vertical"
-			android:background="@drawable/button"
-			android:id="@+id/btn_donation_developer"
-			android:paddingLeft="8dp"/>
+        <Button
+            android:id="@+id/btn_donation_developer"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:gravity="left|center_vertical"
+            android:minHeight="50dp"
+            android:onClick="onClick"
+            android:paddingLeft="8dp"
+            android:text="@string/support_developer"
+            android:textAllCaps="false" />
 
-	</LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
 

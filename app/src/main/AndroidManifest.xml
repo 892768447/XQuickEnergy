@@ -24,8 +24,7 @@
             android:value="54"/>
 
         <activity
-            android:name=".ui.MainActivity"
-            android:resizeableActivity="true">
+            android:name=".ui.MainActivity">
             <intent-filter>
                 <action
                     android:name="android.intent.action.MAIN"/>
@@ -47,12 +46,10 @@
         </activity-alias>
         
         <activity
-            android:name=".ui.SettingsActivity"
-            android:resizeableActivity="true"/>
+            android:name=".ui.SettingsActivity" />
             
         <activity
-            android:name=".ui.HtmlViewerActivity"
-            android:resizeableActivity="true"/>
+            android:name=".ui.HtmlViewerActivity" />
         
     </application>
 
